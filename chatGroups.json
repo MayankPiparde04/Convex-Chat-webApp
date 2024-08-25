@@ -1,0 +1,14 @@
+[
+  {
+    "name": "John Doe",
+    "age": 28,
+    "description": "A software engineer with a passion for open-source projects and AI development.",
+    "iconUrl": "https://example.com/icons/john_doe.png"
+  },
+  {
+    "name": "Priya Singh",
+    "age": 24,
+    "description": "A graphic designer specializing in digital illustrations and branding.",
+    "iconUrl": "https://example.com/icons/priya_singh.png"
+  }
+]
