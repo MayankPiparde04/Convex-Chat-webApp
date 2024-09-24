@@ -1,28 +1,14 @@
-import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
+import { StyleSheet, ActivityIndicator, Text, View } from "react-native";
 import React from "react";
-import { useQuery } from "convex/react";
-import { api } from "../convex/_generated/api";
 
-export default function index() {
-  const groups = useQuery(api.groups.get) || [];
+const index = () => {
   return (
-    <View className="flex-1 bg-white ">
-      {groups.map((group) => (
-        <View
-          key={group._id}
-          className="m-1 bg-orange-200 p-2 rounded-2xl shadow shadow-black gap-2"
-        >
-          <View className="flex-row justify-between px-4">
-            <Text className="text-xl">{group.name}</Text>
-            <Text className="text-xl">{group.age}</Text>
-          </View>
-          <View className="">
-            <Text className="text-xl">{group.description}</Text>
-          </View>
-        </View>
-      ))}
+    <View className="justify-center flex-1 items-center">
+      <ActivityIndicator  size={40} color={'#0101cc'} />
     </View>
   );
-}
+};
+
+export default index;
 
 const styles = StyleSheet.create({});
